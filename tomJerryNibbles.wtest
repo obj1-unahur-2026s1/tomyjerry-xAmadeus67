@@ -12,14 +12,21 @@ describe "prueba de comportamiento de tom y su energia" {
    } 
 } 
  
-describe "comportamiento de tom... " { 
+describe "prueba de comportamiento de la velocidad de tom si come un raton un raton" { 
    test "Si tom come a jerry la velocidad aumenta a 15.2" { 
       tom.come(jerry) 
-      assert.equals(15.2,tom.velocidad) 
+      assert.equals(15.2,tom.velocidad()) 
    } 
-   test "si tom corre 24 metros entonces si velocidad" { 
-      tome.come(jerry)    *hay que seguir la secuencia  de tests primero pide comer un raton despues pregunta su velocidad* 
+   test "si tom corre 24 metros entonces su velocidad queda en 14" { 
+      tome.come(jerry)    //hay que seguir la secuencia  de tests primero pide comer un raton despues pregunta su velocidad
       tom.corre(24) 
       assert.equals(14,tom.velocidad())  
   } 
+}
+
+describe "prueba de comportamiento de la estatura de mickeyMouse cuando cumple un año mas" {
+   test "si mickeyMouse cumple años su estatura tendria que ser 12" {
+      mickyeMouse.cumplirAños()
+      assert.equals(12,mickeyMouse.estatura())
+   }
 }
