@@ -61,4 +61,8 @@ Object mickeyMouse {
    method peso() { 
    return self.estatura() / 3 
    } 
+
+   method cumplirAños() {  
+    edad = edad + 1 
+   } 
 }
